@@ -87,7 +87,7 @@
 }
 
 .work_button-link:hover {
-  background-color: #bf9be0;
+  background-color: var(--first-color);
 }
 
 .work_card:hover .work_button {

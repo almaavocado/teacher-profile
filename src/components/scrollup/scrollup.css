@@ -1,0 +1,24 @@
+.scroll-button {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .scroll-button i {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .scroll-button.show {
+    opacity: 1;
+  }
+  
