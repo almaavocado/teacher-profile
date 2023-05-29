@@ -1,0 +1,121 @@
+.work_filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1.875rem;
+    margin-bottom: 2.5rem;
+  }
+  
+.work_item {
+  cursor: pointer;
+  font-weight: var(--font-bold);
+}
+
+
+.work_container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.work_card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: 300px;
+}
+
+.work_card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.work_mask {
+  background: #a8b6f0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9; /* Change this line */
+}
+
+.work_category {
+  color: #fff;
+  background-color: var(--first-color);
+  border-bottom-left-radius: 0.98rem;
+  border-bottom-right-radius: 0.98rem;
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  font-size: var(--small-font-size);
+  display: inline-block;
+  padding: 0.19rem 0.625rem;
+  transition: 0.3s;
+}
+
+.work_title {
+  color: #fff;
+  font-size: var(--h3-font-size);
+  margin: 0 0 0.98rem;
+  padding: 0 1.25rem;
+  position: absolute;
+  top: 3.75rem;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.work_button-link{
+  color: #fff;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.5rem;
+  font-size: var(--h3-font-size);
+  display: block;
+  background-color: #638ed2;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.work_button-link:hover {
+  background-color: #bf9be0;
+}
+
+.work_card:hover .work_button {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .work_filters {
+    justify-content: center;
+  }
+  .work_container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work_container {
+    grid-template-columns: 310px;
+  }
+  .work_filters {
+    row-gap: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .work_container {
+    grid-template-columns: 1fr;
+  }
+}

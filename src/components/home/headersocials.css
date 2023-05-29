@@ -1,0 +1,29 @@
+.shape {
+    position: absolute;
+}
+
+.crayon {
+    left: 100%;
+    top: 30%;
+}
+
+.planet {
+    left: -20%;
+    top: 30%;
+}
+
+.pcrayon {
+    left: 65%;
+    top: 15%;
+}
+
+.pencil {
+    left: 55%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.blueplanet {
+    left: 10%;
+    top: 15%;   
+}

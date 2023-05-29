@@ -1,0 +1,173 @@
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Add overflow property to hide overflowing shapes */
+}
+
+.intro {
+    max-width: 540px;
+    text-align: center;
+    z-index: 1;
+}
+
+.home_img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.home_name {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+
+.home_socials_link {
+    color: var(--title-color);
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+.home_socials_link:hover {
+    color: #EFC3E6;
+}
+
+.scroll_down {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+}
+
+.home_scroll_name {
+    font-size: var(--small-font-size);
+    color: #EFC3E6;
+}
+
+.mouse {
+    border: 2px solid #EFC3E6;
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes ani-mouse {
+    0% {
+        top: 29%;
+    }
+    15% {
+        top: 50%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 29%;
+    }    
+}
+
+.wheel {
+    background-color: #EFC3E6;
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+.shapes {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none; /* Add pointer-events property to prevent shapes from interfering with interactions */
+}
+
+.shapes {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.shape{
+    position: absolute;
+}
+
+
+.bluecrayon {
+    left: 5%;
+    bottom: 10%;
+    transform: translateX(-50%); /* Center the shape horizontally */
+}
+
+.gcrayon {
+    left: 8%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+.browncrayon {
+    left: 30%;
+    top: 10%;
+}
+
+.pcrayon {
+    left: 60%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+.crayon4 {
+    left: 90%;
+    bottom: 10%;
+    transform: translateX(-50%); 
+}
+
+.yellowcrayon {
+    top: 30%;
+    right: 2%;
+    transform: translateX(-50%);   
+}
+
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .home_name {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .home_socials_link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .home_scroll_name {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Additional media queries for even smaller screens if needed */
+@media (max-width: 480px) {
+    .home_name {
+        font-size: 1.5rem;
+    }
+    .home_socials_link {
+        font-size: 0.8rem; /* Adjust font size for even smaller screens */
+    }
+    
+    .home_scroll_name {
+        font-size: 0.6rem; /* Adjust font size for even smaller screens */
+    }
+}
