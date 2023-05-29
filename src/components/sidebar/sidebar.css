@@ -25,12 +25,13 @@
     height: auto;
     max-height: 50px; /* Adjust the max height as needed */
   }
-  
+
   .nav_list {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     list-style: none;
+    align-items: center;
   }
   
   .nav_link {
@@ -50,5 +51,34 @@
     align-items: center;
   }
   
+  @media (max-width: 768px) {
+    .aside {
+      width: 18%;
+      padding: 2.5rem 1rem;
+    }
+    .logo-container {
+      height: 1px;
+      width: 30px;
+      align-items: center;
+      display: flex;
+    }
+  
+    .logo-img {
+      max-height: 1px;
+      max-width: 1px;
+    }
+  
+    .nav_list {
+      row-gap: 0.5rem;
+    }
+  
+    .nav_link {
+      font-size: 1.2rem;
+    }
+  
+    .nav_footer {
+      display: none;
+    }
+  }
 
   
