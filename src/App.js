@@ -12,15 +12,15 @@ import ScrollUp from './components/scrollup/Scrollup';
 const App = () => {
   return (
     <>
-    
-      <Sidebar />
       <main className='main'>
-        <Home />
+        <Sidebar />
         <ScrollUp />
+        <Home />
         <About />
         <Resume />
         <LessonPlans />
         <LanguageManifesto />
+    
         <Footer />
       </main>
     </>
