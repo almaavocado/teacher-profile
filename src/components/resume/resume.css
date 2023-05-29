@@ -49,6 +49,13 @@
     margin: 0.5rem 0;
 }
 
+@media screen and (max-width: 576px) {
+    .about_container{
+        grid-template-columns: 320px;
+        justify-content: center;
+        text-align: center;   
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .resume_container{
@@ -61,7 +68,7 @@
     }
     @media screen and (max-width: 576px) {
         .resume_container{
-            grid-template-columns: 1fr;
+            grid-template-columns: 330px;
         }
     }
 }
