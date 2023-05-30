@@ -32,7 +32,7 @@ const ScrollUp = () => {
       className={`scroll-button ${isVisible ? 'show' : ''}`}
       onClick={scrollToTop}
     >
-      <i className="fas fa-chevron-up"></i>
+      <i className="icon-arrow-up"></i> 
     </button>
   );
 };

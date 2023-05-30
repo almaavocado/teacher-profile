@@ -3,7 +3,12 @@
 }
 
 .container {
-  text-align: center;
-  padding: 20px;
+  padding: 5px;
 }
 
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 50px;
+  }
+}
